@@ -1,0 +1,18 @@
+
+E:\Bibliotecas\Downloads\Compressed\openssl-0.9.8k_X64\bin>
+E:\Bibliotecas\Downloads\Compressed\openssl-0.9.8k_X64\bin>
+E:\Bibliotecas\Downloads\Compressed\openssl-0.9.8k_X64\bin>keytool -exportcert -
+alias androiddebugkey -keystore "C:\Users\USERNAME\.android\debug.keystore" | "P
+ATH_TO_OPENSSL_LIBRARY\bin\openssl" sha1 -binary | "PATH_TO_OPENSSL_LIBRARY\bin\
+openssl" base64
+O sistema não pode encontrar o caminho especificado.
+
+E:\Bibliotecas\Downloads\Compressed\openssl-0.9.8k_X64\bin>keytool -exportcert -
+alias androiddebugkey -keystore "C:\Users\Nelton Menata\.android\debug.keystore"
+ | "E:\Bibliotecas\Downloads\Compressed\openssl-0.9.8k_X64\bin\openssl" sha1 -bi
+nary | "E:\Bibliotecas\Downloads\Compressed\openssl-0.9.8k_X64\bin\openssl" base
+64
+Enter keystore password:  sucata
+ga0RGNYHvNM5d0SLGQfpQWAPGJ8=
+
+E:\Bibliotecas\Downloads\Compressed\openssl-0.9.8k_X64\bin>
