@@ -1,2 +1,5 @@
+<resources>
+<string name="app_name">sucata</string>
 <string name="facebook_app_id">788395201991589</string>
 <string name="fb_login_protocol_scheme">fb788395201991589</string>
+</resources>

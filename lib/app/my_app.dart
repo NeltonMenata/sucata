@@ -67,13 +67,25 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    SizedBox(height: 50),
                     Text("Aceder Conta"),
                     SizedBox(
                       height: 100,
                     ),
-                    TextFormField(),
-                    TextFormField(),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                    SizedBox(height: 15),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                    SizedBox(height: 30),
                     Container(
                       width: larguraPor(70, context),
                       decoration: BoxDecoration(
