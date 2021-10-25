@@ -50,15 +50,15 @@ class _MyHomePageState extends State<MyHomePage> {
               height: alturaPor(20, context),
               width: double.infinity,
               child: Padding(
-                padding: EdgeInsets.all(15),
-                child: Text(
-                  "SUCATA",
-                  textAlign: TextAlign.left,
-                ),
+                padding: EdgeInsets.only(top: 55, left: 55),
+                child: Text("SUCATA",
+                    textAlign: TextAlign.left,
+                    style: TextStyle(fontSize: 30, color: Colors.white)),
               ),
             ),
             Expanded(
               child: Container(
+                width: double.infinity,
                 height: double.infinity,
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -70,31 +70,53 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 50),
-                    Text("Aceder Conta"),
+                    Text(
+                      "Aceder Conta",
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
                     SizedBox(
                       height: 100,
                     ),
-                    TextFormField(
-                      decoration: InputDecoration(
-                        border: OutlineInputBorder(),
+                    Container(
+                      width: larguraPor(70, context),
+                      padding: EdgeInsets.only(right: 12, left: 12, bottom: 8),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(45),
+                          ),
+                          border: Border.all()),
+                      child: TextFormField(
+                        decoration:
+                            InputDecoration(hintText: "Número da conta"),
                       ),
                     ),
                     SizedBox(height: 15),
-                    TextFormField(
-                      decoration: InputDecoration(
-                        border: OutlineInputBorder(),
+                    Container(
+                      width: larguraPor(70, context),
+                      padding: EdgeInsets.only(right: 12, left: 12, bottom: 8),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(45),
+                          ),
+                          border: Border.all()),
+                      child: TextFormField(
+                        decoration: InputDecoration(hintText: "Senha"),
                       ),
                     ),
                     SizedBox(height: 30),
                     Container(
                       width: larguraPor(70, context),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(20),
-                        ),
-                      ),
-                      child: ElevatedButton(
-                        child: Text("Aceder"),
+                          color: Theme.of(context).primaryColor,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(45),
+                          ),
+                          border: Border.all()),
+                      child: TextButton(
+                        child: Text("Aceder", style: TextStyle(color: Colors.white)),
                         onPressed: () {},
                       ),
                     ),

@@ -20,6 +20,12 @@ class LoginController extends GetxController {
   }
 
   Future<void> createCount() async {
-
+    final queryLogin = QueryBuilder(ParseObject("Usuario"))
+      ..whereEqualTo("telephone", telephone.text)
+      ..whereEqualTo("telephone", password.text);
+    final response = await queryLogin.query();
+    if (response.success && response.results != null) {
+      Get.snackbar("Conta", "Está conta já existe, faça login!");
+    }
   }
 }
